@@ -1,0 +1,31 @@
+.hardskills-container {
+  border: 1px solid greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.hardskills-middle {
+  border: 1px solid orange;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  border: 1px solid red;
+  align-items: center;
+  min-height: 500px;
+  min-width: 900px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: scroll;
+  scrollbar-color: #6272a4ff #44475aff;
+}
+
+.menu-bar {
+  border: 1px solid blue;
+  min-height: 500px;
+  min-width: 200px;
+}

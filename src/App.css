@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: rgba(40, 42, 54, 1);
+  box-sizing: border-box;
+  color: rgba(248, 248, 242, 1);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+SCSS RGB
+$raisin-black: rgba(40, 42, 54, 1);
+$independence: rgba(68, 71, 90, 1);
+$baby-powder: rgba(248, 248, 242, 1);
+$blue-yonder: rgba(98, 114, 164, 1);
+$sky-blue-crayola: rgba(139, 233, 253, 1);
+$spring-green: rgba(80, 250, 123, 1);
+$mellow-apricot: rgba(255, 184, 108, 1);
+$key-lime: rgba(241, 250, 140, 1);
+$tart-orange: rgba(255, 85, 85, 1);
+$lavender-floral: rgba(189, 147, 249, 1);
+$pink: rgb(255, 122, 198, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-right: linear-gradient(90deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-bottom: linear-gradient(180deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-left: linear-gradient(270deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-top-right: linear-gradient(45deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-bottom-right: linear-gradient(135deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-top-left: linear-gradient(225deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-bottom-left: linear-gradient(315deg, #282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+$gradient-radial: radial-gradient(#282a36ff, #44475aff, #f8f8f2ff, #6272a4ff, #8be9fdff, #50fa7bff, #ffb86cff, #f1fa8cff, #ff5555ff, #bd93f9ff, #ff79c6);
+
+SCSS HEX
+$raisin-black: #282a36ff;
+$independence: #44475aff;
+$baby-powder: #f8f8f2ff;
+$blue-yonder: #6272a4ff;
+$sky-blue-crayola: #8be9fdff;
+$spring-green: #50fa7bff;
+$mellow-apricot: #ffb86cff;
+$key-lime: #f1fa8cff;
+$tart-orange: #ff5555ff;
+$lavender-floral: #bd93f9ff;
+$pink: #ff79c6;
+
+*/

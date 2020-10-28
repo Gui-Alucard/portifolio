@@ -1,0 +1,219 @@
+.home-container {
+  align-items: center;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.home-article {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.header-container {
+  align-items: center;
+  /* border: 1px solid rgb(0, 225, 255); */
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+.header-about {
+  /* border: 1px solid orchid; */
+  word-spacing: 4pt;
+  padding: 0 30px 0 100px;
+  text-align: justify;
+  width: 50%;
+}
+
+.header-about h3 {
+  animation-name: starting;
+  animation-duration: 2800ms;
+  animation-iteration-count: 1;
+  color: rgba(241, 250, 140, 1);
+  font-size: 40px;
+  margin-top: 0;
+  text-shadow: 0 0 2px rgba(241, 250, 140, 1);
+}
+
+@keyframes starting {
+  from {
+    transform: translateY(1300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.about {
+  animation-name: about;
+  animation-duration: 2800ms;
+  animation-iteration-count: 1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20pt;
+}
+
+@keyframes about {
+  from {
+    transform: translateY(-1300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.intro {
+  animation-name: intro;
+  animation-duration: 2800ms;
+  animation-iteration-count: 1;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 15pt;
+}
+
+.image-nowme {
+  animation-name: image;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  background-image: url('./nowMe.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 3px 5px 15px black;
+  margin-left: 30px;
+  min-width: 350px;
+  height: 350px;
+  overflow: hidden;
+}
+
+@keyframes image {
+  from {
+    transform: translateX(1500px) rotateZ(360deg);
+  }
+  to {
+    transform: translateX(0) rotateZ(0deg);
+  }
+}
+
+.home-links {
+  /* border: 1px solid darkcyan; */
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-link {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hard-img {
+  animation: bounce 2.5s forwards infinite;
+  transform-origin: center bottom;
+  background-image: url("./brain.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  margin-bottom: 3px;
+  width: 70px;
+}
+
+.code-img {
+  animation: bounce 2.5s forwards infinite;
+  transform-origin: center bottom;
+  background-image: url("./programming.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  margin-bottom: 3px;
+  width: 70px;
+}
+
+.inner-img {
+  animation: bounce 2.5s forwards infinite;
+  transform-origin: center bottom;
+  background-image: url("./unlocked.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  margin-bottom: 3px;
+  width: 70px;
+}
+
+@keyframes bounce {
+  from,
+  33%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  20%,
+  23% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -25px, 0) scaleY(1.1);
+  }
+
+  50% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
+  }
+
+  60% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -5px, 0) scaleY(1.02);
+  }
+
+  80% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.footer {
+  align-self: flex-end;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+}
+
+.input {
+  background: none;
+  border: none;
+  color: rgba(248, 248, 242, 1);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+}
+
+.input-startover {
+  background-image: url("./left-arrow.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  cursor: pointer;
+  height: 45px;
+  outline: none;
+}

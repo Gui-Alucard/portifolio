@@ -1,0 +1,187 @@
+.intro-main {
+  align-items: center;
+  /* border: 1px solid orange; */
+  display: flex;
+  justify-content: center;
+}
+
+.intro-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.intro-section-info {
+  animation-name: intro;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* border: 1px solid rgb(0, 225, 255); */
+  width: 600px;
+}
+
+@keyframes intro {
+  from {
+    transform: translateX(-1800px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.intro-section-title {
+  /* border: 1px solid red; */
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.intro-section-title p {
+  font-size: 20px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.intro-section-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-section-links {
+  /* border: 1px solid orchid; */
+  align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  margin-left: 15px;
+  width: 100px;
+}
+
+.links {
+  align-items: center;
+  /* border: 1px solid orange; */
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  width: 40px;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.github {
+  background-image: url('../styles/git.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 500ms;
+}
+
+.github:hover {
+  height: 50px;
+  transition: 500ms;
+  width: 50px;
+}
+
+.linkedin {
+  background-image: url('../styles/linkedin.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 500ms;
+}
+
+.linkedin:hover {
+  height: 50px;
+  transition: 500ms;
+  width: 50px;
+}
+
+.intro-section-lets-start {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin-top: 70px;
+  text-align: center;
+  width: 120px;
+}
+
+.input-lets-start {
+  animation-name: lets-start;
+  animation-duration: 1000ms;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  background: none;
+  border: none;
+  color: rgba(241, 250, 140, 1);
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: 0 0 1px rgba(241, 250, 140, 1);
+  transition: 500ms;
+  outline: none;
+}
+
+.input-lets-start:hover {
+  font-size: 22px;
+  transition: 500ms;
+}
+
+@keyframes lets-start {
+  from {
+    text-shadow: 0 0 1px rgba(241, 250, 140, 1);
+  }
+  to {
+    text-shadow: 0 0 5px rgba(241, 250, 140, 1);
+  }
+}
+
+/* linhas amarelas */
+.intro-section-color {
+  /* border: 1px solid blue; */
+  display: flex;
+  height: 100vh;
+}
+
+.div-rigth {
+  animation-name: div-rigth;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  background-color: rgba(241, 250, 140, 1);
+  box-shadow: 0px 0 5px rgba(241, 250, 140, 1);
+  margin-left: 35px;
+  width: 120px;
+}
+
+.div-left {
+  animation-name: div-left;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  background-color: rgba(241, 250, 140, 1);
+  box-shadow: 0px 0 5px rgba(241, 250, 140, 1);
+  margin-right: 35px;
+  width: 220px;
+}
+
+@keyframes div-rigth {
+  from {
+    transform: translateX(-2000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes div-left {
+  from {
+    transform: translateX(-2500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
